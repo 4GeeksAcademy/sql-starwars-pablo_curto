@@ -39,7 +39,7 @@ class Caracter(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(250), nullable=False)
 
-class Address(Base):
+class CaracterFav(Base):
     __tablename__ = 'caracter_fav'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
@@ -50,7 +50,7 @@ class Address(Base):
     def to_dict(self):
         return {}
 
-class Address(Base):
+class VehiclesFav(Base):
     __tablename__ = 'vehicles_fav'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
@@ -61,8 +61,8 @@ class Address(Base):
     def to_dict(self):
         return {}
 
-class Address(Base):
-    __tablename__ = 'planetas_fav'
+class PlanetsFav(Base):
+    __tablename__ = 'planets_fav'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
     id = Column(Integer, primary_key=True)
